@@ -1,0 +1,283 @@
+
+.navbar .megamenu{ padding: 1rem; }
+/* megamenu */
+
+.carousel .carousel-item {
+    height: 400px;
+  }
+  .carousel-item img {
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    min-height: 400px;
+}
+
+/* sidebar list group menu */
+.sidebar{
+    background: rgb(23, 36, 47) !important;
+    /* border: 2px solid red; */
+    list-style:none;
+    color: #fff;
+    line-height: 40px;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+.sidebar li::before {
+    content: "\2022";
+    color: rgb(236, 158, 12);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+/* post style */
+.user{
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.date{
+    font-size: 15px;
+    font-weight: bold;
+}
+/* testimonial */
+.testimonial{
+  margin-top:50px;
+  margin-bottom: 50px;
+}
+.testimonial .carousel-item{
+  height: 150px;
+}
+
+/* single post style */
+.rt-content{
+  background-image: url(../images/ornaments-leaves.svg), linear-gradient(rgb(255, 255, 255) 1%, rgb(204, 195, 176) 97%);
+  background-size: 500px, cover;
+  background-position: 0px 80px, center center;
+  background-repeat: no-repeat;
+  padding: 60px;
+}
+.rt-content h3{
+  font-family: 'Roboto Serif', sans-serif;
+  line-height: 1.13;
+}
+.card{
+  margin-top: 30px;
+}
+.card img{
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+.post h1,h2,h3,h4,h5,h6{
+  font-family: 'Amita', cursive;
+}
+
+.post p{
+  font-family: 'Arya', sans-serif;
+}
+/* article content on posts page */
+.article .card{
+  box-shadow: 0 0 16px 0 rgb(0 0 0 / 40%);
+  min-height: 450px;
+  min-width: 350px;
+}
+.article .card a{
+  text-decoration: none;
+  color: #11100e;
+}
+.article .card .card-title{
+  font-size: 24px;
+}
+.article .card .po-year{
+  position: absolute;
+  padding: 14px 10px 5px 0px;
+  bottom: 5px;
+  color: #8a8173;
+  font-size: 13px;
+}
+
+/* footer social icon  */
+.footer{
+  background:#28231e;
+  color: #aea493;
+}
+.footer h5{
+  color: #cd6727;
+  line-height: 1.2;
+  margin-bottom: 1.7rem;
+}
+.footer ul li{
+  margin-bottom: 20px;
+  padding-left: 0px;
+  line-height: 1.1;
+}
+.footer ul li a{
+  text-decoration: inherit;
+  color: inherit;
+  /* border-bottom: 0.3px solid #aea493; */
+  padding-bottom: 0.2vw;
+  font-size: 14px;
+}
+.footer ul li a:hover{
+  color: #cd6727;
+  border-bottom: 0.3px solid #cd6727;
+}
+/* divider content use in future start*/
+.footer .div-content{
+  display: block;
+    margin-top: 0rem;
+    width: 24px;
+    height: 242px;
+    background-image: url(../images/flower-divider.avif);
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    left: 195px;
+    bottom: 160px;
+    position: relative;
+}
+/* will use in future end */
+.footer a i{ 
+  font-style: normal;
+  background-color: #fff;
+  padding: 5px;
+  color:rgb(119, 115, 115);
+  font-size: 30px;
+} 
+.footer a{
+  padding: 5px;
+}
+/* social icon on hover */
+.footer a .fa-facebook-square:hover{ 
+  font-style: normal;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 5px;
+  color:#4267B2;
+  transition: .4s ease-in;
+} 
+.footer a .fa-twitter-square:hover{ 
+  font-style: normal;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 5px;
+  color:#1DA1F2;
+  transition: .4s ease-in;
+} 
+
+.footer a .fa-instagram-square:hover{ 
+  font-style: normal;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 5px;
+  color:#bc2a8d;
+  transition: .4s ease-in;
+}
+
+.footer a .fa-youtube-square:hover{ 
+  font-style: normal;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 5px;
+  color:#c4302b;
+  transition: .4s ease-in;
+}
+.footer hr{
+  /* background-color: #28231e; */
+  border-top: 1px solid #8a8173;
+  /* padding: 1rem calc((100% - 1140px) / 2); */
+  float: left !important;
+  width: 95% !important;
+  padding-left: inherit !important;
+}
+
+/* contact page bg cover */
+.bg-cover{
+  background: url("../images/cover-bg.jpg");
+  background-size: cover;
+  padding: 30px;
+}
+
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+
+  .navbar .has-megamenu{position:static!important;}
+  .navbar .megamenu{left:0; right:0; width:100%; margin:0; background:#feda9e ;color:#181313;}
+  .navbar .navbar-nav .nav-link:hover{
+    border-bottom: 5px solid #d00714;
+  }
+
+  .navbar .megamenu ul li{
+    color:#d00714;
+    padding: 10px;
+  }
+  .navbar .megamenu ul li a{
+    color:#d00714;
+    text-decoration: none;
+  }
+  .navbar .megamenu ul li:hover{
+    background: #fef7c0;
+    color:#d00714;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+  /* footer element */
+  .footer{
+    padding-left: 65px;
+  }
+
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ mobile view ============ */
+@media(max-width: 991px){
+  .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+    overflow-y: auto;
+      max-height: 90vh;
+      margin-top:10px;
+  }
+  .navbar .megamenu{background:#feda9e ;color:#181313;}
+  .navbar .megamenu ul li{
+    color:#d00714;
+    padding: 10px;
+  }
+  .navbar .megamenu ul li a{
+    color:#d00714;
+    text-decoration: none;
+  }
+  .navbar .megamenu ul li:hover{
+    background: #fef7c0;
+    color:#d00714;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 30px;
+  }
+  
+  /* footer element */
+  .footer{
+    padding-left: 0;
+  }
+  .footer .copyright{
+    text-align: center !important;
+  }
+  .footer a i{ 
+    font-style: normal;
+    background-color: transparent !important;
+    color:rgb(119, 115, 115);
+    font-size: 25px;
+    display: inline-block;
+  } 
+  .footer .about{
+    padding-top: 10px;
+  }
+}
+/* ============ mobile view .end// ============ */
